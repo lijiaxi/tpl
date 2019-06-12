@@ -1,0 +1,134 @@
+.el-input__inner:focus {
+  border-color: #57a3f3;
+  box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+
+
+}
+
+.el-form-item.is-error {
+  .el-input__inner:focus {
+    box-shadow: 0 0 0 2px rgba(237, 63, 20, .2);
+
+  }
+}
+
+.el-form-item.is-success {
+  .el-input__inner:focus {
+    box-shadow: 0 0 0 2px rgba(103, 194, 58, .2);
+
+  }
+}
+
+.el-input__inner,
+.el-button {
+  transition: all .5s;
+}
+
+.el-button {
+  &:hover {
+    border: 1px solid #2b85e4;
+    box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+  }
+}
+
+.el-button--default {
+  &:hover {
+    background: #fff;
+    color: #2b85e4;
+  }
+
+  &:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+  }
+}
+
+.el-button--danger {
+  &:hover {
+    border: 1px solid #ed3f14;
+    box-shadow: 0 0 0 2px rgba(237, 63, 20, .2);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(237, 63, 20, .2);
+  }
+}
+
+.el-message-box {
+  .el-button {
+    border: 1px solid #2b85e4 !important;
+
+    &:hover {
+      border: 1px solid #2b85e4;
+      box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+      color: #fff;
+      background-color: #2b85e4;
+    }
+
+    &:focus {
+      color: #fff;
+      background-color: #2b85e4;
+      border: 1px solid #2b85e4;
+      box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+    }
+  }
+}
+
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+.fx {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.label_suffix {
+  width: 40px;
+  text-align: center;
+}
+
+.fy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+  }
+}
+
+.dlc-is-mobile {
+  .el-dialog {
+    width: 100%;
+  }
+
+  .el-message-box {
+    width: 80%;
+  }
+
+  .el-date-picker {
+    left: 50% !important;
+    transform: translateX(-50%)
+  }
+
+}

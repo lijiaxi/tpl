@@ -1,0 +1,257 @@
+// #ifdef MP-WEIXIN
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "陪护床",
+				"usingComponents": {
+					"i-button": "/wxcomponents/iview/button/index",
+					"i-input": "/wxcomponents/iview/input/index",
+					"i-modal": "/wxcomponents/iview/modal/index",
+					"i-message": "/wxcomponents/iview/message/index",
+					"i-notice-bar": "/wxcomponents/iview/notice-bar/index"
+				}
+			}
+		},
+		{
+			"path": "pages/test/index",
+			"style": {
+        "navigationBarTitleText": "运维人员",
+        "usingComponents": {
+					"i-button": "/wxcomponents/iview/button/index",
+					"i-input": "/wxcomponents/iview/input/index",
+					"i-modal": "/wxcomponents/iview/modal/index",
+					"i-message": "/wxcomponents/iview/message/index",
+					"i-notice-bar": "/wxcomponents/iview/notice-bar/index"
+				}
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"usingComponents": {
+					"i-tabs": "/wxcomponents/iview/tabs/index",
+					"i-tab": "/wxcomponents/iview/tab/index",
+					"i-button": "/wxcomponents/iview/button/index",
+          "i-load-more": "/wxcomponents/iview/load-more/index",
+          "van-tab": "/wxcomponents/vant/tab/index",
+          "van-tabs": "/wxcomponents/vant/tabs/index",
+          "i-message": "/wxcomponents/iview/message/index"
+				},
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/order/orderDetail/index",
+			"style": {
+				"navigationBarTitleText": "陪护床",
+				"usingComponents": {
+					"i-button": "/wxcomponents/iview/button/index",
+					"i-message": "/wxcomponents/iview/message/index",
+					"i-modal": "/wxcomponents/iview/modal/index"
+				}
+			}
+		},
+		{
+			"path": "pages/personal/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"usingComponents": {
+					"i-cell-group": "/wxcomponents/iview/cell-group/index",
+					"i-cell": "/wxcomponents/iview/cell/index",
+					"i-icon": "/wxcomponents/iview/icon/index"
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"backgroundColor": "#fff",
+		"selectedColor": "#0fa7c3",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/bed.png",
+				"selectedIconPath": "static/bed_select.png",
+				"text": "陪护床"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"iconPath": "/static/order.png",
+				"selectedIconPath": "/static/order_select.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/personal/index",
+				"iconPath": "/static/personal.png",
+				"selectedIconPath": "/static/personal_select.png",
+				"text": "我的"
+			}
+		]
+	},
+	"subPackages": [
+		{
+      "root": "pagesA",
+      "pages": [
+        {
+          "path": "auth/index",
+          "style": {
+            "navigationBarTitleText": "用户信息授权",
+            "usingComponents": {
+              "i-icon": "/wxcomponents/iview/icon/index",
+              "i-button": "/wxcomponents/iview/button/index",
+              "i-message": "/wxcomponents/iview/message/index",
+              "i-modal": "/wxcomponents/iview/modal/index",
+              "i-toast": "/wxcomponents/iview/toast/index"
+            }
+          }
+        },
+        {
+          "path": "hospital/index",
+          "style": {
+            "navigationBarTitleText": "套餐选择",
+            "usingComponents": {
+              "i-icon": "/wxcomponents/iview/icon/index",
+              "i-button": "/wxcomponents/iview/button/index",
+              "i-message": "/wxcomponents/iview/message/index",
+              "i-modal": "/wxcomponents/iview/modal/index",
+              "i-toast": "/wxcomponents/iview/toast/index",
+              "i-load-more": "/wxcomponents/iview/load-more/index",
+              "van-tab": "/wxcomponents/vant/tab/index",
+              "van-tabs": "/wxcomponents/vant/tabs/index"
+            }
+          }
+        },
+        {
+          "path": "success/index",
+          "style": {
+            "navigationBarTitleText": "开锁成功",
+            "usingComponents": {
+              "i-button": "/wxcomponents/iview/button/index",
+              "i-alert": "/wxcomponents/iview/alert/index",
+              "i-message": "/wxcomponents/iview/message/index"
+            }
+          }
+        },
+        {
+          "path": "message/index",
+          "style": {
+            "navigationBarTitleText": "消息列表",
+            "usingComponents": {
+              "i-icon": "/wxcomponents/iview/icon/index",
+              "i-load-more": "/wxcomponents/iview/load-more/index"
+            },
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "message/detail/index",
+          "style": {
+            "navigationBarTitleText": "消息列表",
+            "usingComponents": {
+              "i-icon": "/wxcomponents/iview/icon/index",
+              "i-load-more": "/wxcomponents/iview/load-more/index"
+            }
+          }
+        },
+        {
+          "path": "user/index",
+          "style": {
+            "navigationBarTitleText": "新手教程",
+            "usingComponents": {
+              "i-icon": "/wxcomponents/iview/icon/index"
+            }
+          }
+        },
+        {
+          "path": "about/index",
+          "style": {
+            "navigationBarTitleText": "关于我们",
+            "usingComponents": {
+              "i-icon": "/wxcomponents/iview/icon/index"
+            }
+          }
+        },
+        {
+          "path": "service/index",
+          "style": {
+            "navigationBarTitleText": "服务条款",
+            "usingComponents": {
+              "i-icon": "/wxcomponents/iview/icon/index"
+            }
+          }
+        },
+        {
+          "path": "deposit/index",
+          "style": {
+            "navigationBarTitleText": "缴纳押金",
+            "usingComponents": {
+              "i-button": "/wxcomponents/iview/button/index"
+            }
+          }
+        },
+        {
+          "path": "depositReturn/index",
+          "style": {
+            "navigationBarTitleText": "缴纳押金",
+            "usingComponents": {
+              "i-button": "/wxcomponents/iview/button/index",
+              "i-modal": "/wxcomponents/iview/modal/index"
+            }
+          }
+        },
+        {
+          "path": "login/index",
+          "style": {
+            "navigationBarTitleText": "绑定手机",
+            "usingComponents": {
+              "i-button": "/wxcomponents/iview/button/index",
+              "i-icon": "/wxcomponents/iview/icon/index"
+            }
+          }
+        },
+        {
+          "path": "feedback/index",
+          "style": {
+            "navigationBarTitleText": "意见反馈",
+            "usingComponents": {
+              "i-button": "/wxcomponents/iview/button/index",
+              "i-toast": "/wxcomponents/iview/toast/index",
+              "i-modal": "/wxcomponents/iview/modal/index"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+// #endif
+
+// #ifdef MP-ALIPAY
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
+// #endif
