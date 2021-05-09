@@ -20,7 +20,7 @@
     "element-ui": "^2.4.11",
     "epic-spinners": "^1.0.4",
     "koa": "^2.5.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "nuxt": "^2.0.0",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3",
